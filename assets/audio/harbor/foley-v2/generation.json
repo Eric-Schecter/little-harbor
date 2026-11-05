@@ -1,0 +1,36 @@
+{
+  "attempts": [
+    {
+      "id": "arrow_release",
+      "text": "One isolated small medieval wooden crossbow firing. Immediate tight dry bowstring snap, a short warm wooden mechanism clack, quick airy arrow release, subtle string tension decay. Close clean foley, charming light game sound, crisp but not sharp or metallic. One shot only, no reload sequence, no impact, no music, voices, ambience or reverb.",
+      "duration": 1.2,
+      "date": "2026-11-03T16:11:10.766Z",
+      "status": "complete",
+      "httpStatus": 200
+    },
+    {
+      "id": "arrow_impact",
+      "text": "One isolated arrow embedding deeply into a wooden boat hull. Immediate compact woody THUNK with a crisp fibrous puncture and very short quiet shaft quiver. Satisfying solid wood penetration, warm dry close foley, light cute medieval game. No metallic ringing, gunshot, explosion, water, ambience, music, voice or long reverb. Single impact.",
+      "duration": 1.2,
+      "date": "2026-11-03T16:11:14.374Z",
+      "status": "complete",
+      "httpStatus": 200
+    },
+    {
+      "id": "stone_release",
+      "text": "One isolated small medieval wooden catapult launching a stone. Short rope tension creak immediately releasing into a solid wooden arm clack and a brief low airy stone whoosh. Warm chunky playful but physically grounded foley. Single launch only, no impact, explosion, gunshot, metal ringing, music, voices or background.",
+      "duration": 1.5,
+      "date": "2026-11-03T16:11:17.460Z",
+      "status": "complete",
+      "httpStatus": 200
+    },
+    {
+      "id": "stone_impact",
+      "text": "One isolated heavy stone striking a hollow wooden ship hull. Immediate deep rounded wooden THUD, sharp short plank crack, followed by two or three small wood fragments settling. Weighty warm resonant wood, dry close game foley, compact decay, no harsh high hiss. No explosion, gunshot, metallic ringing, water, ambience, voices or music.",
+      "duration": 1.5,
+      "date": "2026-11-03T16:11:20.225Z",
+      "status": "complete",
+      "httpStatus": 200
+    }
+  ]
+}

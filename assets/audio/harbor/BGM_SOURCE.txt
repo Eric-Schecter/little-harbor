@@ -1,0 +1,22 @@
+Little Harbor - Sunny Sails
+Original 32-bar composition and arrangement created for this project.
+112 BPM, D major, harp arpeggios, marimba call-and-response, light shaker and low drum.
+Reproducible source: tools/audio/compose_harbor_bgm.py
+Instrument samples: VSCO 2 Community Edition, Versilian Studios / Sam Gossner.
+License: CC0. Source: https://github.com/sgossner/VSCO-2-CE
+Selected unmodified source recordings copied from the local t1 sample library.
+No music track from the reference game is used.
+
+Adventure revision: 48 bars in 6/8, dotted-quarter = 92, approximately 62.61 seconds.
+Original new melody, four contrasting sections, flute lead, spiccato violin accompaniment, marimba answers, harp, hand-drum fills.
+Additional CC0 recordings from the same VSCO 2 CE repository (mono/22050 Hz conversion, onset trim and gain normalization):
+Woodwinds/Flute/susNV/LDFlute_susNV_C5_v2_1.wav (blob c781084689262db0267e3b888ac9a9244f32dbd7)
+Woodwinds/Flute/stac/LDFlute_stac_C5_v2_rr1.wav (blob 8da3b215649aacc8e0590080987034bddbcaac16)
+Strings/Solo Violin/spic/LLVln_spic_C5_v2_rr1.wav (blob f99aa8b70b2853d7eb18b33d61f3636a1a09aa3e)
+Original first arrangement retained as tools/audio/compose_harbor_bgm_v1.py.
+
+Current replacement: Pebble Picnic, original casual mini-game theme.
+32 bars, 4/4, 104 BPM, 73.85 seconds. C-major extended chords, syncopated harp,
+short marimba motifs with rests, gentle wooden taps/shaker, four arrangement variations.
+Uses only the previously attributed CC0 harp and marimba recordings plus synthesized percussion.
+No flute or violin in this arrangement. Adventure composition retained separately.

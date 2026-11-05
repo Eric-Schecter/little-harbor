@@ -1,0 +1,100 @@
+{
+  "attempts": [
+    {
+      "id": "rapid_release",
+      "text": "A single tight double wooden crossbow snap, two very fast dry string ticks and small ratchet clacks, light agile short arrow swishes. Crisp intimate playful medieval weapon foley. No gunshots. One isolated game sound, immediate onset, clean dry recording, no voices, music, ambience or long reverb.",
+      "duration": 1.2,
+      "date": "2026-11-04T12:23:46.274Z",
+      "status": "complete",
+      "httpStatus": 200
+    },
+    {
+      "id": "rapid_hit",
+      "text": "Two quick light arrows embedding in wooden planks, close dry tuk-tuk punctures with tiny feather flutter. Compact delicate high wooden knocks. No metal or gunshots. One isolated game sound, immediate onset, clean dry recording, no voices, music, ambience or long reverb.",
+      "duration": 1.2,
+      "date": "2026-11-04T12:23:58.983Z",
+      "status": "complete",
+      "httpStatus": 200
+    },
+    {
+      "id": "heavy_release",
+      "text": "One powerful medieval siege crossbow release. Heavy taut cable twang with a bass wooden frame clunk and thick bolt whoosh. Deep compact resonant mechanical foley, no gunpowder. One isolated game sound, immediate onset, clean dry recording, no voices, music, ambience or long reverb.",
+      "duration": 1.5,
+      "date": "2026-11-04T12:24:16.691Z",
+      "status": "complete",
+      "httpStatus": 200
+    },
+    {
+      "id": "heavy_hit",
+      "text": "A thick iron tipped siege bolt punches through a timber ship plank: one deep woody ker-THUNK, short splintering crack and brief low shaft vibration. No explosion. One isolated game sound, immediate onset, clean dry recording, no voices, music, ambience or long reverb.",
+      "duration": 1.5,
+      "date": "2026-11-04T12:24:19.509Z",
+      "status": "complete",
+      "httpStatus": 200
+    },
+    {
+      "id": "scatter_release",
+      "text": "A wooden catapult launches a basket of pebbles: quick rope creak, basket clack, several small stones rattling then fanning out in airy swishes. Light coarse dry foley. One isolated game sound, immediate onset, clean dry recording, no voices, music, ambience or long reverb.",
+      "duration": 1.5,
+      "date": "2026-11-04T12:24:22.340Z",
+      "status": "complete",
+      "httpStatus": 200
+    },
+    {
+      "id": "scatter_hit",
+      "text": "A compact scatter of five small stones pelts wooden planks, clustered irregular tok-ka-tak cracks and pebble rattles. Distinct crunchy multiple impacts, no explosion. One isolated game sound, immediate onset, clean dry recording, no voices, music, ambience or long reverb.",
+      "duration": 1.5,
+      "date": "2026-11-04T12:24:24.819Z",
+      "status": "complete",
+      "httpStatus": 200
+    },
+    {
+      "id": "siege_release",
+      "text": "A heavy wooden trebuchet releases one giant boulder, deep stressed timber groan then weighty counterweight clunk and a low short rushing stone whoosh. No gunshot. One isolated game sound, immediate onset, clean dry recording, no voices, music, ambience or long reverb.",
+      "duration": 1.5,
+      "date": "2026-11-04T12:24:27.043Z",
+      "status": "complete",
+      "httpStatus": 200
+    },
+    {
+      "id": "siege_hit",
+      "text": "A huge boulder crushes a wooden ship deck, deep rounded low thoom with broken timber cracks and heavy fragments settling. Very weighty compact physical impact, no magical explosion. One isolated game sound, immediate onset, clean dry recording, no voices, music, ambience or long reverb.",
+      "duration": 1.5,
+      "date": "2026-11-04T12:24:29.455Z",
+      "status": "complete",
+      "httpStatus": 200
+    },
+    {
+      "id": "flame_release",
+      "text": "One flaming ceramic firepot tossed from a wooden launcher: small terracotta clink, short airy flame whoosh and a tiny burning fuse crackle. Warm controlled playful foley, no explosion. One isolated game sound, immediate onset, clean dry recording, no voices, music, ambience or long reverb.",
+      "duration": 1.5,
+      "date": "2026-11-04T12:24:31.847Z",
+      "status": "complete",
+      "httpStatus": 200
+    },
+    {
+      "id": "flame_hit",
+      "text": "A flaming terracotta pot breaks against wood: clear brittle ceramic pop-crack, then short warm fire woof and gentle burning crackles. Compact physical fire ignition, no huge explosion. One isolated game sound, immediate onset, clean dry recording, no voices, music, ambience or long reverb.",
+      "duration": 1.5,
+      "date": "2026-11-04T12:24:34.831Z",
+      "status": "complete",
+      "httpStatus": 200
+    },
+    {
+      "id": "oil_release",
+      "text": "A corked ceramic oil jar launched: thick liquid glug inside a clay bottle, small wooden mechanism click and short airy swoosh. Wet rounded close foley. One isolated game sound, immediate onset, clean dry recording, no voices, music, ambience or long reverb.",
+      "duration": 1.5,
+      "date": "2026-11-04T12:24:39.859Z",
+      "status": "complete",
+      "httpStatus": 200
+    },
+    {
+      "id": "oil_hit",
+      "text": "A heavy ceramic oil jar breaks on timber: brittle pottery crack and thick viscous liquid splosh, several sticky wet droplets. Clearly wet gooey impact, no fire or explosion. One isolated game sound, immediate onset, clean dry recording, no voices, music, ambience or long reverb.",
+      "duration": 1.5,
+      "date": "2026-11-04T12:24:43.094Z",
+      "status": "complete",
+      "httpStatus": 200
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "source": "arrow_release.mp3",
+    "output": "ballista.wav",
+    "start_seconds": 0.12172335600907029,
+    "duration": 0.38,
+    "peak_dbfs": -2.1581079461903916
+  },
+  {
+    "source": "arrow_impact.mp3",
+    "output": "arrow_hit.wav",
+    "start_seconds": 0.0,
+    "duration": 0.43,
+    "peak_dbfs": -2.1581079461903916
+  },
+  {
+    "source": "stone_release.mp3",
+    "output": "catapult.wav",
+    "start_seconds": 0.0,
+    "duration": 0.5699773242630386,
+    "peak_dbfs": -2.1581079461903916
+  },
+  {
+    "source": "stone_impact.mp3",
+    "output": "stone_hit.wav",
+    "start_seconds": 0.0,
+    "duration": 0.72,
+    "peak_dbfs": -2.1581079461903916
+  }
+]

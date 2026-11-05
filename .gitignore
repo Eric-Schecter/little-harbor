@@ -1,0 +1,12 @@
+.godot/
+*.import
+!assets/audio/harbor/little-harbor-bgm.wav.import
+build/
+.export_templates/
+captures/
+archive/
+.DS_Store
+*.log
+.env
+.env.*
+__pycache__/

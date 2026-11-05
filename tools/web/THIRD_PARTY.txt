@@ -1,0 +1,12 @@
+Little Harbor asset provenance
+
+Harbor/ship/tower artwork: generated for this project with OpenAI image generation.
+UI, projectile, water and buff visuals: original procedural Godot drawings.
+Weapon/water foley: ElevenLabs-generated recordings produced for this project and related local prototypes; no reference-game audio retained.
+UI and enemy cannon sounds: original synthesis from tools/audio/build_original_ui_audio.py.
+Music: original Pebble Picnic composition/arrangement, corrected 16/24-bit PCM decoding.
+Music instrument recordings: VSCO 2 Community Edition, Versilian Studios / Sam Gossner, CC0.
+https://github.com/sgossner/VSCO-2-CE
+Used harp and marimba samples: KSHarp_D4_mf.wav, KSHarp_C5_mf.wav, Marimba_hit_Outrigger_F5_loud_01.wav.
+Fonts: Bungee and Barlow Condensed (SIL Open Font License); full licenses in licenses/.
+Engine: Godot Engine, MIT license, https://godotengine.org/license/

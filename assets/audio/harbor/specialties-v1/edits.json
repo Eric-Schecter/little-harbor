@@ -1,0 +1,86 @@
+[
+  {
+    "source": "rapid_release.mp3",
+    "output": "rapid_release.wav",
+    "start_seconds": 0.2763718820861678,
+    "duration": 0.46,
+    "peak_dbfs": -2.1581079461903916
+  },
+  {
+    "source": "rapid_hit.mp3",
+    "output": "rapid_hit.wav",
+    "start_seconds": 0.0,
+    "duration": 0.46,
+    "peak_dbfs": -2.1581079461903916
+  },
+  {
+    "source": "heavy_release.mp3",
+    "output": "heavy_release.wav",
+    "start_seconds": 0.0,
+    "duration": 0.68,
+    "peak_dbfs": -2.1581079461903916
+  },
+  {
+    "source": "heavy_hit.mp3",
+    "output": "heavy_hit.wav",
+    "start_seconds": 0.0,
+    "duration": 0.8,
+    "peak_dbfs": -2.1581079461903916
+  },
+  {
+    "source": "scatter_release.mp3",
+    "output": "scatter_release.wav",
+    "start_seconds": 0.0,
+    "duration": 0.68,
+    "peak_dbfs": -2.1581079461903916
+  },
+  {
+    "source": "scatter_hit.mp3",
+    "output": "scatter_hit.wav",
+    "start_seconds": 0.00199546485260771,
+    "duration": 0.8,
+    "peak_dbfs": -2.1581079461903916
+  },
+  {
+    "source": "siege_release.mp3",
+    "output": "siege_release.wav",
+    "start_seconds": 0.0,
+    "duration": 0.68,
+    "peak_dbfs": -2.1581079461903916
+  },
+  {
+    "source": "siege_hit.mp3",
+    "output": "siege_hit.wav",
+    "start_seconds": 0.0,
+    "duration": 0.8,
+    "peak_dbfs": -2.1581079461903916
+  },
+  {
+    "source": "flame_release.mp3",
+    "output": "flame_release.wav",
+    "start_seconds": 0.18158730158730158,
+    "duration": 0.68,
+    "peak_dbfs": -2.1581079461903916
+  },
+  {
+    "source": "flame_hit.mp3",
+    "output": "flame_hit.wav",
+    "start_seconds": 0.021950113378684806,
+    "duration": 0.8,
+    "peak_dbfs": -2.1581079461903916
+  },
+  {
+    "source": "oil_release.mp3",
+    "output": "oil_release.wav",
+    "start_seconds": 0.0,
+    "duration": 0.68,
+    "peak_dbfs": -2.1581079461903916
+  },
+  {
+    "source": "oil_hit.mp3",
+    "output": "oil_hit.wav",
+    "start_seconds": 0.0,
+    "duration": 0.8,
+    "peak_dbfs": -2.1581079461903916
+  }
+]
