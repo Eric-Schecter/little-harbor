@@ -10,7 +10,10 @@ A cozy harbor defense game. Merge towers, discover upgrades, and hold off endles
 
 - Build ballistas, catapults, and fire pots; merge matching towers to upgrade.
 - Deploy towers on the waterfront to defend your harbor.
-- Q/W/E: build · G: stone rain · O: rally · P/Esc: pause.
+- Q/W/E: build.
+- G: stone rain.
+- O: rally.
+- P/Esc: pause.
 
 ## Development
 
