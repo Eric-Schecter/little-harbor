@@ -301,7 +301,7 @@ func _unhandled_input(event):
 		elif event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
 			if Rect2(580,341,440,68).has_point(event.position) or Rect2(1538,8,44,43).has_point(event.position): paused = false
 			elif Rect2(580,427,440,68).has_point(event.position): start_game()
-			elif Rect2(580,513,440,68).has_point(event.position): exit_game()
+			elif not OS.has_feature('web') and Rect2(580,513,440,68).has_point(event.position): exit_game()
 		return
 	if specializing >= 0:
 		if event is InputEventKey and event.pressed:
@@ -910,11 +910,12 @@ func draw_overlay(title: String, sub: String):
 
 func draw_pause_menu():
 	draw_rect(Rect2(0,0,1600,900),Color(0.1,0.3,0.31,0.72))
-	panel(Rect2(520,230,560,410))
+	panel(Rect2(520,230,560,324 if OS.has_feature('web') else 410))
 	text_at('PAUSED',Vector2(716,295),38,Color('#477970'),true)
 	button(Rect2(580,341,440,68),'RESUME','Return to the harbor',true,'ESC')
 	button(Rect2(580,427,440,68),'RESTART','Start a new run from wave 1')
-	button(Rect2(580,513,440,68),'QUIT GAME','Return to launch screen' if OS.has_feature('web') else 'Close the game')
+	if not OS.has_feature('web'):
+		button(Rect2(580,513,440,68),'QUIT GAME','Close the game')
 
 func exit_game():
 	if OS.has_feature('web'):

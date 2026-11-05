@@ -25,4 +25,4 @@ python3 tools/export_web.py
 python3 tools/serve_web.py 8795
 ```
 
-Open http://localhost:8795. Click the cover to start; quit returns to the cover.
+Open http://localhost:8795. Click the cover to start. Web pause offers resume/restart; desktop also offers quit.
