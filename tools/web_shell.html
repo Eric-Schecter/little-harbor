@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#2bbfc0"><link rel="icon" type="image/svg+xml" href="favicon.svg"><title>Little Harbor · 小小港湾</title>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#2bbfc0"><link rel="icon" type="image/svg+xml" href="favicon.svg"><title>Little Harbor</title>
 <style>
 *{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#316b77;font-family:system-ui,sans-serif}#canvas{display:block;width:100%;height:100%;outline:none;touch-action:none}
 #launch{position:fixed;inset:0;z-index:2;display:grid;place-items:center;padding:20px;isolation:isolate;background:#79abae}
@@ -9,14 +9,14 @@
 #play{position:absolute;inset:0;width:100%;height:100%;padding:0;border:0;border-radius:inherit;background:transparent;cursor:pointer}#play:disabled{cursor:wait}#play:focus-visible{outline:3px solid #ffe4a4;outline-offset:5px}
 .panel{position:absolute;top:calc(100% + 20px);left:-20px;right:-20px;text-align:center;color:#fff8df;text-shadow:0 1px 5px #163c55;pointer-events:none;font-size:13px}progress{display:block;width:170px;max-width:100%;height:5px;margin:0 auto 10px;accent-color:#ffdd8d}#status{margin:0}#error{white-space:pre-wrap;overflow-wrap:anywhere;color:#fff2db}[hidden]{display:none!important}@media(prefers-reduced-motion:reduce){.cover-card{transition:none}}
 </style>$GODOT_HEAD_INCLUDE</head><body>
-<canvas id="canvas" tabindex="0">请使用支持 WebGL 2 的浏览器。</canvas>
-<section id="launch" aria-label="小小港湾启动页"><div class="cover-card"><button id="play" aria-label="开始小小港湾" title="点击开始游戏" disabled></button><div class="panel" role="status" aria-live="polite"><progress id="progress" aria-label="游戏加载进度" max="1" value="0"></progress><p id="status">正在准备港湾…</p><p id="error" hidden></p></div></div></section>
+<canvas id="canvas" tabindex="0">Please use a browser that supports WebGL 2.</canvas>
+<section id="launch" aria-label="Little Harbor launch screen"><div class="cover-card"><button id="play" aria-label="Play Little Harbor" title="Click to play" disabled></button><div class="panel" role="status" aria-live="polite"><progress id="progress" aria-label="Loading progress" max="1" value="0"></progress><p id="status">Loading the harbor…</p><p id="error" hidden></p></div></div></section>
 <script src="$GODOT_URL"></script><script>
 const config=$GODOT_CONFIG, canvas=document.getElementById('canvas'), play=document.getElementById('play'), status=document.getElementById('status'), progress=document.getElementById('progress');
 config.canvas=canvas;config.onProgress=(current,total)=>{if(total>0)progress.value=current/total;};
 const engine=new Engine(config), pack=config.mainPack||config.executable+'.pck';
-function error(e){document.getElementById('error').hidden=false;document.getElementById('error').textContent=String(e);status.hidden=false;status.textContent='加载失败，请刷新重试';}
+function error(e){document.getElementById('error').hidden=false;document.getElementById('error').textContent=String(e);status.hidden=false;status.textContent='Loading failed. Please refresh and try again.';}
 Promise.all([engine.init(config.executable),engine.preloadFile(pack,pack)]).then(()=>{progress.hidden=true;status.hidden=true;play.disabled=false;}).catch(error);
-play.addEventListener('click',async()=>{play.disabled=true;status.hidden=false;status.textContent='正在出航…';try{await engine.start({args:['--main-pack',pack,...(config.args||[])]});document.getElementById('launch').hidden=true;canvas.focus();}catch(e){error(e);}});
+play.addEventListener('click',async()=>{play.disabled=true;status.hidden=false;status.textContent='Setting sail…';try{await engine.start({args:['--main-pack',pack,...(config.args||[])]});document.getElementById('launch').hidden=true;canvas.focus();}catch(e){error(e);}});
 window.harborExit=()=>location.reload();
 </script></body></html>
