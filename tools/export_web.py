@@ -23,6 +23,8 @@ pack.rename(OUT / versioned_pack)
 page = OUT / 'index.html'
 page.write_text(page.read_text().replace('config.canvas=canvas;', f'config.mainPack={versioned_pack!r};config.canvas=canvas;'))
 shutil.copy2(ROOT / 'assets/favicon.svg', OUT / 'favicon.svg')
+for source, target in [('menu-hover.wav', 'hover.wav'), ('menu-press.wav', 'press.wav')]:
+    shutil.copy2(ROOT / 'assets/audio/harbor/ui' / source, OUT / target)
 (OUT / '.nojekyll').touch()
 shutil.copy2(ROOT / 'assets/harbor/cover-v1.png', OUT / 'cover.png')
 for name in ('README.txt', 'THIRD_PARTY.txt'):

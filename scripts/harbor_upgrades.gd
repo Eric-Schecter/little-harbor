@@ -912,10 +912,19 @@ func draw_pause_menu():
 	draw_rect(Rect2(0,0,1600,900),Color(0.1,0.3,0.31,0.72))
 	panel(Rect2(520,230,560,324 if OS.has_feature('web') else 410))
 	text_at('PAUSED',Vector2(716,295),38,Color('#477970'),true)
-	button(Rect2(580,341,440,68),'RESUME','Return to the harbor',true,'ESC')
-	button(Rect2(580,427,440,68),'RESTART','Start a new run from wave 1')
+	pause_button(Rect2(580,341,440,68),'RESUME',true)
+	pause_button(Rect2(580,427,440,68),'RESTART')
 	if not OS.has_feature('web'):
-		button(Rect2(580,513,440,68),'QUIT GAME','Close the game')
+		pause_button(Rect2(580,513,440,68),'QUIT GAME')
+
+func pause_button(r: Rect2, label: String, gold := false):
+	panel(r)
+	if gold: draw_style_box(button_style(Color('#f2c17e')),r.grow(-4))
+	elif r.has_point(pointer): draw_style_box(button_style(Color('#fff0cf')),r.grow(-4))
+	var size_ = 30
+	var width = bold.get_string_size(label,HORIZONTAL_ALIGNMENT_LEFT,-1,size_).x
+	var baseline = r.get_center().y+(bold.get_ascent(size_)-bold.get_descent(size_))*0.5
+	text_at(label,Vector2(r.get_center().x-width*0.5,baseline),size_,Color('#3d4c47'),true)
 
 func exit_game():
 	if OS.has_feature('web'):

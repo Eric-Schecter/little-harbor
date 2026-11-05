@@ -17,6 +17,13 @@ config.canvas=canvas;config.onProgress=(current,total)=>{if(total>0)progress.val
 const engine=new Engine(config), pack=config.mainPack||config.executable+'.pck';
 function error(e){document.getElementById('error').hidden=false;document.getElementById('error').textContent=String(e);status.hidden=false;status.textContent='Loading failed. Please refresh and try again.';}
 Promise.all([engine.init(config.executable),engine.preloadFile(pack,pack)]).then(()=>{progress.hidden=true;status.hidden=true;play.disabled=false;}).catch(error);
-play.addEventListener('click',async()=>{play.disabled=true;status.hidden=false;status.textContent='Setting sail…';try{await engine.start({args:['--main-pack',pack,...(config.args||[])]});document.getElementById('launch').hidden=true;canvas.focus();}catch(e){error(e);}});
+const hoverSound=new Audio('hover.wav'),pressSound=new Audio('press.wav');
+hoverSound.volume=.75;pressSound.volume=.85;
+hoverSound.preload='auto';pressSound.preload='auto';
+let lastHover=0;
+function playSound(clip){clip.currentTime=0;const result=clip.play();if(result)result.catch(()=>{});}
+play.addEventListener('pointerenter',()=>{const now=performance.now();if(!play.disabled&&now-lastHover>180){playSound(hoverSound);lastHover=now;}});
+play.addEventListener('focus',()=>{if(!play.disabled&&!play.matches(':hover'))playSound(hoverSound);});
+play.addEventListener('click',async()=>{playSound(pressSound);play.disabled=true;status.hidden=false;status.textContent='Setting sail…';try{await engine.start({args:['--main-pack',pack,...(config.args||[])]});document.getElementById('launch').hidden=true;canvas.focus();}catch(e){error(e);}});
 window.harborExit=()=>location.reload();
 </script></body></html>

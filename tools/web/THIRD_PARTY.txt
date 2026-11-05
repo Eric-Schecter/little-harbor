@@ -10,3 +10,5 @@ https://github.com/sgossner/VSCO-2-CE
 Used harp and marimba samples: KSHarp_D4_mf.wav, KSHarp_C5_mf.wav, Marimba_hit_Outrigger_F5_loud_01.wav.
 Fonts: Bungee and Barlow Condensed (SIL Open Font License); full licenses in licenses/.
 Engine: Godot Engine, MIT license, https://godotengine.org/license/
+
+Cover hover/click cues: reused from the local Sailshot (t2) project.
