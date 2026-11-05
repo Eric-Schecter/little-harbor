@@ -556,23 +556,7 @@ func draw_working_tower(i: int, center: Vector2, angle: float, scale_: float):
 	arrays[Mesh.ARRAY_TEX_UV] = texture_uvs
 	mesh.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLES,arrays)
 	draw_mesh(mesh,sheet)
-	if family == 0:
-		# The string visibly draws toward the loading carriage, then snaps forward.
-		var pull = loading*17-kick*5
-		var arms = PackedVector2Array([Vector2(-22,-24),Vector2(-8+pull,-8),Vector2(-23,11)])
-		draw_polyline(arms,Color('#f6dfad'),1.6,true)
-		if not cycle.released:
-			draw_line(Vector2(8+pull,-8),Vector2(-25+pull,-8),Color('#dfb779'),2,true)
-	else:
-		var pivot = Vector2(-3,7)
-		var turn = loading*0.20-kick*0.45
-		var end = pivot+(Vector2(23,-29)-pivot).rotated(turn)
-		var winch = Vector2(18,20)
-		var midpoint = (end+winch)*0.5+Vector2(kick*9,kick*9)
-		draw_polyline(PackedVector2Array([winch,midpoint,end]),Color('#f1d39a'),1.8,true)
-		draw_circle(winch,5,Color('#895939'))
-		var crank = Vector2.from_angle(loading*TAU*1.5)*7
-		draw_line(winch-crank,winch+crank,Color('#e8bf7b'),2.5,true)
+	# Animate the painted mechanism itself; extra ropes duplicate the atlas artwork.
 	draw_set_transform(Vector2.ZERO)
 
 func draw_utility_icon(r: Rect2, kind: int, cooldown_: float, key: String):
